@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" [class.navbar-scrolled]="isScrolled">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-car text-primary-custom me-2"></i>
+      <span class="fw-bold">AutoRepair Pro</span>
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('home')">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('about')">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('services')">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('testimonials')">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('faq')">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToSection('contact')">Contact</a>
+        </li>
+      </ul>
+      
+      <button class="btn btn-primary" (click)="scrollToSection('contact')">
+        Book Appointment
+      </button>
+    </div>
+  </div>
+</nav>

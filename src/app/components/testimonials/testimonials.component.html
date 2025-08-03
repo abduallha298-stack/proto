@@ -1,0 +1,27 @@
+<section class="section-padding bg-dark-custom">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="display-4 fw-bold mb-3">What Our Clients Say</h2>
+        <p class="lead text-muted">Don't just take our word for it - hear from our satisfied customers</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let testimonial of testimonials">
+        <div class="testimonial-card h-100">
+          <div class="text-center mb-4">
+            <img [src]="testimonial.photoUrl" [alt]="testimonial.name" class="testimonial-photo mb-3">
+            <h5 class="fw-bold">{{ testimonial.name }}</h5>
+            <div class="star-rating">
+              <i class="fas fa-star" *ngFor="let star of getStarArray(testimonial.rating)"></i>
+            </div>
+          </div>
+          <p class="testimonial-quote text-muted">
+            "{{ testimonial.quote }}"
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

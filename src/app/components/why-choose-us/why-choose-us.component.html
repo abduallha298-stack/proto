@@ -1,0 +1,20 @@
+<section class="section-padding bg-darker">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="display-4 fw-bold mb-3">Why Choose Us</h2>
+        <p class="lead text-muted">Discover what makes us the preferred choice for auto repair services</p>
+      </div>
+    </div>
+    
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6" *ngFor="let feature of features">
+        <div class="card-custom h-100 p-4 text-center">
+          <i [class]="feature.icon + ' icon-red'"></i>
+          <h4 class="fw-bold mb-3">{{ feature.title }}</h4>
+          <p class="text-muted">{{ feature.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

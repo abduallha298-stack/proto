@@ -1,0 +1,46 @@
+.form-label {
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  font-size: 1rem;
+  height: auto;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  display: block;
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+.card-custom {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .card-custom {
+    padding: 2rem !important;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,45 @@
+.about-img {
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+  opacity: 0.8;
+}
+
+.about-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.list-unstyled li {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.fas.fa-check {
+  font-size: 1rem;
+}
+
+h2 {
+  color: #FFFFFF;
+}
+
+.lead {
+  color: #F5F5F5;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .about-images {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-img.mt-4 {
+    margin-top: 1rem !important;
+  }
+  
+  .row.g-3 {
+    --bs-gutter-x: 1rem;
+  }
+}

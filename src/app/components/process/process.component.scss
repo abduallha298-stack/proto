@@ -1,0 +1,61 @@
+.process-step {
+  position: relative;
+}
+
+.process-arrow {
+  position: absolute;
+  top: 30px;
+  right: -15px;
+  font-size: 1.5rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+h5 {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+}
+
+.process-number {
+  transition: all 0.3s ease;
+}
+
+.process-step:hover .process-number {
+  transform: scale(1.1);
+  box-shadow: 0 12px 35px rgba(255, 0, 0, 0.4);
+}
+
+@media (max-width: 991px) {
+  .process-arrow {
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  .process-step {
+    padding: 20px 10px;
+  }
+  
+  .process-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  h5 {
+    font-size: 1rem;
+  }
+}
